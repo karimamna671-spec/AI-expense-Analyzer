@@ -13,7 +13,7 @@ if "expenses" not in st.session_state:
     st.session_state.expenses = pd.DataFrame(columns=["Date", "Amount", "Category", "Description"])
 
 # ----------------- GROQ SETUP -----------------
-api_key = os.getenv(" ")
+api_key = os.getenv("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")
 if not api_key:
     st.warning("⚠ Please set your GROQ_API_KEY environment variable in Colab.")
 client = Groq(api_key=api_key)
